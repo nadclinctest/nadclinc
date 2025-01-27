@@ -1,0 +1,223 @@
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin: 0;
+  }
+
+
+.gradient-image {
+    position: relative;
+    width: 100%; /* Set your desired width */
+    height: 600px; /* Set your desired height */
+    background: 
+        linear-gradient(to left,rgb(67, 173, 136) 2%, rgba(255, 255, 255,0) 100%), /* Gradient layer */url('image.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the element */
+    background-position: center; /* Centers the image */
+    margin-right: 0;
+    margin-top: 0;
+    
+}
+
+.logo {
+    position: absolute;
+    width: 5%;
+    left: 1%;
+    top: 5%;
+
+    
+}
+
+.arrival-text-font-h1 {
+    position: absolute;
+    right: 3%;
+    text-align: right;
+    font: "Times New Roman", Times, serif;
+
+}
+
+.arrival-text-font-p {
+    position: absolute;
+    color: rgb(247, 247, 247);
+    font-size: 50px;
+    right: 2%;
+    bottom: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    position: absolute;
+    bottom: 10%;
+    right: 47.5%;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(67, 173, 136);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(67, 173, 136) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(67, 173, 136);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(67, 173, 136) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+
+  /*nigger nigger nigger*/
+
+.card {
+    width: 290px;
+    height: 300px;
+    background: rgb(67, 173, 136);
+    padding: .4em;
+    border-radius: 6px;
+  }
+
+.card:hover {
+
+    animation: tilt-shaking 0.5s infinite;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(238, 238, 238);
+    padding: 7px;
+    font-size: 20px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+  
+#about-back {
+  top: 2100px;
+  position: absolute;
+  height:150px;
+  width: 100%;
+  background: rgb(255,255,255);
+background: linear-gradient(103deg, rgba(255,255,255,1) 5%, rgba(67,173,136,1) 32%);
+}
+
+/*  break */
+
+.cardabout {
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(67, 173, 136),
+              -15px -15px 30px rgb(67, 173, 136);
+ }
+
+ .aboutbg {
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutdesc {  
+  font-family:'Courier New', Courier, monospace;
+  font-size: 33px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  padding-top: 5%;
+
+}
+
+.loading {
+  display: none; /* Initially hide the loading animation */
+  position: fixed;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transform: scale(1.5);
+}
+
+.loading svg polyline {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+  stroke: #ff4d5033;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: #ff4d5f;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
