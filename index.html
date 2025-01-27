@@ -1,1 +1,50 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Main.css" rel="stylesheet">
+    <title>manucaud</title>
+</head>
+<body>
+    <div class="loading">
+        <svg width="64px" height="48px">
+          <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+          <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+        </svg>
+      </div>   
+    <div class="gradient-image">
+        <img class="logo" src="logo1.png" >
+        <div class="arrival-text">
+            <h1 class="arrival-text-font-h1" style="font-size: 100px; color: white;">NAD<Br>CLINC</h1>
+            <p class="arrival-text-font-p">embrace wellness,<br> embrace rife</p>
+            <a href="#service"><button>Start</button></a>
+        </div>    
+    </div>
+    <div class="service" id="service">
+        <h1 class="h1-hover" style="font-family: 'Times New Roman', Times, serif;text-align: center;font-size: 50px;">SERVICES</h1>
+        <a href="index_bmi.html" target="_blank"><div class="card" style="position: absolute;top: 750px; left:10%;">
+            <div class="card-image"><img src="bmo.jpeg" style="width: 100%;"></div>
+            <div class="heading" style="position: relative; top: 25%;text-align: center;"> Body Mass Index (BMI) is a value derived from the mass and height of a person.</div>
+        </div></a>
+        <a href="" target="_blank"><div class="card" style="position: absolute;top: 750px; left:42%;">
+            <div class="card-image"><img src="cal.jpeg" style="width: 100%;"></div>
+            <div class="heading" style="position: relative; top: 25%;text-align: center;"> Calorie Calculator provides the amount of intake a person should have daily</div>
+        </div></a>
+        <a href="index_Kcal.html" target="_blank"><div class="card" style="position: absolute;top: 750px; left:75%;">
+            <div class="card-image"><img src="weight.jpeg" style="width: 100%;height: 150%;"></div>
+            <div class="heading" style="position: relative; top: 25%;text-align: center;"> Ideal Weight Calculator computes ideal body weight (IBW) ranges based on height, gender, and age.</div>
+        </div></a>
+    </div>
+    <div id="about">
+        <h1 style="position: absolute;top:1100px;left: 43%;font-size: 50px;font-family: 'Times New Roman', Times, serif;">ABOUT US</h1>
+        <img class="aboutbg" src="about.png" style="height:75%;width: 100%;position: absolute;top:1235px;">
+        <div id="about-back"></div>
+        <div class="cardabout" style="position: absolute;top: 1350px;right:30%;"><h3 class="aboutdesc">Nad Clinic is a premier healthcare provider dedicated to delivering exceptional patient care.<br>
+             We offer a comprehensive range of medical services. Our experienced team of medical professionals is committed to providing personalized and compassionate care to every patient.</h3></div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>  
